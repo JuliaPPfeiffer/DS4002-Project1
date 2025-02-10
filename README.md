@@ -1,21 +1,20 @@
 # DS4002-Project1
 
-Goal: This file serves as an orientation to everyone who comes to your repository, it should enable them to get their bearings.
-Use markdown headers to divide content.
-Make an H2 (##) section explaining the contents of the repository
-
-## Contents
+## Repository Contents
 This repository contains the following contents:
+- ***SCRIPTS***: this folder contains all scripts used to clean our data, conduct our analysis, and generate visualizations.
+- ***DATA***: this folder contains our initial dataset (nfl_sentiments) that sparked our interest as well as all the data used to complete our project.
+- ***OUTPUT***: this folder contains outputs produced from our analysis, such as tables and graphs. This includes all NFL sentiment graphs, such as histograms, bar graphs, and word clouds, which visualize our exploratory analysis.
 
 ### Section 1: Software and platform section
 
-Software Used:
+***Software Used***:
 For this project, we used python as the primary language for conducting our analysis and generating visualizations. Coding was completed through the resourses Google Collab and Visual Studio Code. 
 
-Packages:
-Packages used include pandas, TextBlob, stopwords, re, matplotlib, seaborn, WordCloud...
+***Packages***:
+Packages used include pandas, numpy, TextBlob, stopwords, re, matplotlib, seaborn, and WordCloud.
 
-Platform: 
+***Platform***: 
 All members of this project used Mac as their platform. 
 
 ### Section 2: A Map of your documentation.
