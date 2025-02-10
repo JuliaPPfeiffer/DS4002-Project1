@@ -1,0 +1,8 @@
+Column Name,Data Type,Description,Example Value
+username,String,Social media account name of the post author,HireSamCassell
+timestamp,DateTime,Date and time when the post was published (UTC format),2024-11-29T23:30:57.000Z
+text,String,Raw content/message of the social media post,That's a Cleveland Browns type way to lose a game.
+team,String,NFL team mentioned or referenced in the post,Cleveland Browns
+sentiment,String,"Classified emotional tone (positive, negative, neutral) of the post",negative
+confidence,Float,Model's certainty score (0-1) in its sentiment classification,0.69503664970398
+roberta_raw_outputs,List[Float],"Raw probability scores [negative, neutral, positive] from RoBERTa model","[0.6950366497039795, 0.173924520611763, 0.13103878498077393]"
