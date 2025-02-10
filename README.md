@@ -5,13 +5,18 @@ Use markdown headers to divide content.
 Make an H2 (##) section explaining the contents of the repository
 
 ## Contents
-This repository contains the following the contents:
+This repository contains the following contents:
 
 ### Section 1: Software and platform section
 
-The type(s) of software you used for the project.
-The names of any add-on packages that need to be installed with the software.
-The platform (e.g., Windows, Mac, or Linux) you used.
+Software Used:
+For this project, we used python as the primary language for conducting our analysis and generating visualizations. Coding was completed through the resourses Google Collab and Visual Studio Code. 
+
+Packages:
+Packages used include pandas, TextBlob, stopwords, re, matplotlib, seaborn, WordCloud...
+
+Platform: 
+All members of this project used Mac as their platform. 
 
 ### Section 2: A Map of your documentation.
 In this section, you should provide an outline or tree illustrating the hierarchy of folders and subfolders contained in your Project Folder, and listing the files stored in each folder or subfolder.
