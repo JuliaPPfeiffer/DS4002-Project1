@@ -18,9 +18,7 @@ Packages used include pandas, numpy, TextBlob, stopwords, re, matplotlib, seabor
 All members of this project used Mac as their platform. 
 
 ### Section 2: A Map of your documentation.
-In this section, you should provide an outline or tree illustrating the hierarchy of folders and subfolders contained in your Project Folder, and![sentiment_category_distribution](https://github.com/user-attachments/assets/17e2f39e-df67-41ac-bb93-8e00bbce9caa)
- listing the files stored in each folder or subfolder.
-
+![Project 1 GitHub Outline](https://github.com/user-attachments/assets/14b82b97-7cc9-4875-9b67-483a40855c64)
 
 
 ### Section 3: Instructions for reproducing your results. 
