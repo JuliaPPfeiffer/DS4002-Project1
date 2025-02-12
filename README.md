@@ -22,8 +22,6 @@ All members of this project used Mac as their platform.
 
 ### Section 3: Reproduction Steps  
 
-#### **Step-by-Step Instructions to Reproduce Results**  
-
 ##### **1. Set Up the Environment**  
 - Install necessary Python libraries, including pandas, numpy, matplotlib, seaborn, statsmodels, and sklearn.  
 
