@@ -12,7 +12,7 @@ This repository contains the following contents:
 For this project, we used python as the primary language for conducting our analysis and generating visualizations. Coding was completed through the resourses Google Collab and Visual Studio Code. 
 
 ***Packages***:
-Packages used include pandas, numpy, TextBlob, stopwords, re, matplotlib, seaborn, and WordCloud.
+Packages used include pandas, numpy, TextBlob, stopwords, re, matplotlib, seaborn, statsmodels, and WordCloud.
 
 ***Platform***: 
 All members of this project used Mac as their platform. 
