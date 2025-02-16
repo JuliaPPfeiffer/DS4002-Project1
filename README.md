@@ -18,7 +18,7 @@ Packages used include pandas, numpy, TextBlob, stopwords, re, matplotlib, seabor
 All members of this project used Mac as their platform. 
 
 ### Section 2: Documentation Map 
-![Project 1 GitHub Outline](https://github.com/user-attachments/assets/14b82b97-7cc9-4875-9b67-483a40855c64)
+![Project 1 GitHub Outline (1)](https://github.com/user-attachments/assets/2d4859f7-3740-4e6c-b9f0-af45f3f0ef39)
 
 ### Section 3: Reproduction Steps  
 
