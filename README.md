@@ -23,30 +23,40 @@ All members of this project used Mac as their platform.
 ### Section 3: Reproduction Steps  
 
 ##### **1. Set Up the Environment**  
-- Install necessary Python libraries, including pandas, numpy, matplotlib, seaborn, statsmodels, and sklearn.  
+- Within the SCRIPTS folder, locate 'data_analysis.ipynb' to perform the analysis (the following instructions are performed with this script).
+- Install necessary Python libraries, including pandas, numpy, matplotlib, seaborn, statsmodels, and sklearn.
 
 ##### **2. Load the Dataset**  
-- Download the **NFL Twitter Sentiment Analysis dataset** from Kaggle.  
+- Download the **NFL Twitter Sentiment Analysis dataset** from Kaggle: https://www.kaggle.com/datasets/cammyc/nfl-twitter-sentiment-analysis/data
 - Ensure the dataset file (CSV) is in the working directory.  
-- Load the dataset into a pandas DataFrame.  
+- Load the dataset into a pandas DataFrame.
+- Check the properties to get a sense of the data (e.g., df.info()).
 
 ##### **3. Preprocess the Data**  
 - Remove invalid entries, such as missing team names or incorrect sentiment labels.  
-- Convert timestamps to a datetime format for easier filtering.  
-- Map sentiment labels to numerical values:  
-  - Positive → +1  
-  - Neutral → 0  
-  - Negative → -1  
+- Convert timestamps to a datetime objects for easier filtering.
+  - Find the earliest and latest tweets within the dataset.
+  - Create a histogram to see the frequency of tweets over time.
+  - Create a dataframe of tweets occurring between Nov 29, 2024- Nov 30, 2024 called 'filtered_df'
+- Filter tweets posted up to three days before each team's game.  
+  - Create a list of games from week 13 of the NFL season.
+  - Create a dictionary.
+  - Loop through original dataframe 'df' to assign each team a game result label:
+    - **1** if the team won  
+    - **0** if the team lost
+  - Save into a new dataframe 'new_df', then convert into a csv file (cleaned data)
 
 ##### **4. Aggregate Pre-Game Sentiment**  
-- Filter tweets posted up to three days before each team's game.  
-- Group the data by team and compute the average sentiment score for each team.  
+-  Import the defaultdict class from the collections module in Python.
+-  Createa dataframe for aggregated sentiments per team and map sentiment labels to numerical values:  
+  - Positive → +1  
+  - Neutral → 0  
+  - Negative → -1
+- Obtain the average fan sentiment score per team.
 
 ##### **5. Merge with Game Results**  
-- Assign each team a game result label:  
-  - **1** if the team won  
-  - **0** if the team lost  
-- Merge this game result data with the computed average sentiment scores.  
+- Merge the computed average sentiment scores with the game results for each team using a for loop.
+- View the aggregated data to ensure it contains the following variables: team, average_sentiment, and won (indicates team win/loss).
 
 ##### **6. Fit Logistic Regression Model**  
 - Use logistic regression to analyze the relationship between a team's pre-game sentiment and their game outcome.  
@@ -58,8 +68,8 @@ All members of this project used Mac as their platform.
 - If the p-value is less than 0.05, reject the null hypothesis, indicating a significant relationship.  
 
 ##### **8. Visualize Findings**  
-- Create a histogram to visualize the overall distribution of sentiment scores.  
-- Generate bar plots to compare the average sentiment for each team before their game.  
+- Generate bar plots to compare the average sentiment for each team before their game and average sentiment overall by match outcomes.
+- Optional: within 'sentiment_graphs.ipynb' in the SCRIPTS folder, create a histogram to visualize the overall distribution of sentiment scores.  
 
 ##### **9. Interpretation of Results**  
 - If the p-value is below 0.05, conclude that fan sentiment before a game is significantly related to the game’s outcome.  
