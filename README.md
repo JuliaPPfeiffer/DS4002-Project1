@@ -49,9 +49,9 @@ All members of this project used Mac as their platform.
 ##### **4. Aggregate Pre-Game Sentiment**  
 -  Import the defaultdict class from the collections module in Python.
 -  Createa dataframe for aggregated sentiments per team and map sentiment labels to numerical values:
-  - Positive → +1
-  - Neutral → 0
-  - Negative → -1
+   - Positive → +1
+   - Neutral → 0
+   - Negative → -1
 - Obtain the average fan sentiment score per team.
 
 ##### **5. Merge with Game Results**  
