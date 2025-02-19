@@ -30,21 +30,21 @@ All members of this project used Mac as their platform.
 - Download the **NFL Twitter Sentiment Analysis dataset** from Kaggle: https://www.kaggle.com/datasets/cammyc/nfl-twitter-sentiment-analysis/data
 - Ensure the dataset file (CSV) is in the working directory.  
 - Load the dataset into a pandas DataFrame.
-- Check the properties to get a sense of the data (e.g., df.info()).
+- Check the properties to get a sense of the data (e.g., df.head() ).
 
 ##### **3. Preprocess the Data**  
 - Remove invalid entries, such as missing team names or incorrect sentiment labels.  
 - Convert timestamps to a datetime objects for easier filtering.
   - Find the earliest and latest tweets within the dataset.
   - Create a histogram to see the frequency of tweets over time.
-  - Create a dataframe of tweets occurring between Nov 29, 2024- Nov 30, 2024 called 'filtered_df'
+  - Create a dataframe of tweets occurring between Nov 29, 2024- Nov 30, 2024 called 'filtered_df'.
 - Filter tweets posted up to three days before each team's game.  
   - Create a list of games from week 13 of the NFL season.
   - Create a dictionary.
   - Loop through original dataframe 'df' to assign each team a game result label:
     - **1** if the team won  
     - **0** if the team lost
-  - Save into a new dataframe 'new_df', then convert into a csv file (cleaned data)
+  - Save into a new dataframe 'new_df', then convert into a csv file (cleaned data).
 
 ##### **4. Aggregate Pre-Game Sentiment**  
 -  Import the defaultdict class from the collections module in Python.
